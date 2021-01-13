@@ -1,0 +1,145 @@
+.container {
+    height: 56px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.headerWrapper {
+    max-width: 1440px;
+    min-width: 750px;
+    height: 100%;
+    margin: 0 auto;
+    .logo {
+        float: left;
+        width: 100px;
+        height: 56px;
+        background: url('https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png');
+        background-size: contain;
+    }
+    .write_btn {
+        float: right;
+        width: 100px;
+        height: 40px;
+        margin: 8px 12px 0;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        background-color: #ea6f5a;
+        font-size: 15px;
+        line-height: 24px;
+        color: #fff;
+    }
+    .sign_up {
+        float: right;
+        width: 80px;
+        height: 38px;
+        margin: 9px 5px 0 15px;
+        border: 1px solid rgba(236,97,73,.7);
+        background-color: transparent;
+        border-radius: 20px;
+        color: #ea6f5a;
+        line-height: 24px;
+    }
+    .log_in, .Aa_btn {
+        float: right;
+        padding: 0 5px;
+        margin-left: 12px;
+        line-height: 56px;
+        cursor: pointer;
+        color: #969696;
+    }
+}
+
+.box_flex {
+    min-width: 768px;
+    height: 100%;
+    color: #333;
+    .nav {
+        float: left;
+        padding: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .find {
+        color: #ea6f5a;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .box_flex .head {
+        display: none;
+    }
+}
+
+.searchWrapper {
+    float: left;
+    position: relative;
+    line-height: 56px;
+    .search {
+        position: relative;
+        border: 1px solid #eee;
+        background-color: #eee;
+        padding: 0 40px 0 20px;
+        height: 38px;
+        width: 120px;
+        border-radius: 40px;
+        font-size: 14px;
+        outline: none;
+        transition: all .3s ease-out;
+        &::placeholder {
+            color: #aaa;
+        }
+        &:focus {
+            width: 180px;
+        }
+        
+    }
+    &::after {
+        position: absolute;
+        z-index: 1;
+        top: 15px;
+        right: 11px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        content: '\e64d';
+        font-family: 'iconfont';
+    }
+    &.focused::after {
+        background-color: #969696;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .iconshuaxin:before {
+    content: "\e60f";
+  }
+  
+  .iconzhinanzhen:before {
+    content: "\e610";
+  }
+  
+  .iconAa:before {
+    content: "\e636";
+  }
+  
+  .iconmagnifier:before {
+    content: "\e64d";
+  }
+  
+  .iconyumaobi:before {
+    content: "\e6e5";
+  }
