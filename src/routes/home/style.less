@@ -1,0 +1,44 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 30px;
+    .left {
+        float: left;
+        width: 625px;
+        .bannerImg img {
+            width: 100%;
+        }
+
+    }
+    .right {
+        float: right;
+        width: 280px;
+    }
+    .backTop {
+        position: fixed;
+        right: 100px;
+        bottom: 100px;
+        width: 30px;
+        height: 30px;
+        background-color: #333;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            transform: rotate(30deg);
+        }
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            transform: rotate(60deg);
+        }
+    }
+}
